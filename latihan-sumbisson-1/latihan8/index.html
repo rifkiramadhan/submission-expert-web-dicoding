@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label</title>
+</head>
+<body>
+    <input id="tosCheckbox" type="checkbox">
+    <label for="tosCheckbox">Do you agree with term of service?</label>
+    <!-- Screen Reader: "Do you agree with term of service? checkbox not check" -->
+    <br>
+
+    <!-- Button tampak teks-->
+    <button>Sign Up</button>
+    <br>
+
+    <!-- Button tidak tampak teks -->
+    <!--  -->
+    <button>
+        <i class="fa fa-heart"></i>
+    </button>
+    <br>
+
+    <!-- Button atribut aria label -->
+    <button aria-label="add to like">
+        <i class="fa fa-heart"></i>
+    </button>
+    <br>
+
+    <!-- Button terdeteksi pada screen reader -->
+    <img src="/path/to/images.jpg" alt="some alternative text" />
+
+</body>
+</html>

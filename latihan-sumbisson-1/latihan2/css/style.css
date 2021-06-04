@@ -1,0 +1,62 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* grid-template-columns: repeat(3, 1fr 2fr); */
+    /* grid-template-columns: repeat(6, 1fr); */
+
+    /* grid-template-columns: 200px 100px 200px; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-rows: 50px 100px; */
+}
+    
+/* styling pendukung */
+.wrapper div {
+    border: 1px dashed black;
+    padding: 32px;
+    
+    /* padding: 16px; */
+    /* background-color: white; */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+    /* padding: 8px;
+    background-color: antiquewhite;
+    border: 1px dashed black; */
+}
+
+/* single box column start & end */
+.box1 {
+    grid-column-start: 1; /* box1 akan dimulai dari kolom garis pertama */
+    grid-column-end: 3; /* dan berakhir di kolom garis ketiga */
+}
+
+.box2 {
+    grid-column-start: 3; /* box2 akan dimulai dari kolom garis ketiga */
+    grid-row-start: 1; /* dan baris garis pertama */
+    grid-row-end: 3; /* kemudian berakhir di baris garis ketiga */
+}
+
+.box3 {
+    grid-column-start: 1; /* box1 akan dimulai dari kolom garis pertama */
+    grid-column-end: 3; /* dan berakhir di kolom garis ketiga */
+}
+
+/* coloring */
+.box1, .box4 {
+    background-color: mediumseagreen;
+}
+ 
+ 
+.box2, .box6 {
+    background-color: steelblue;
+}
+ 
+ 
+.box3, .box5 {
+    background-color: gold;
+}

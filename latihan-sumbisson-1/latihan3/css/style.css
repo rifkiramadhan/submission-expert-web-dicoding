@@ -1,0 +1,70 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+}
+    
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+    
+html, body, main {
+    height: 100%;
+    width: 100%;
+}
+    
+#drawer {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    transform: translate(-250px, 0);
+    transition: transform 0.3s ease-in-out;
+    background-color:#111;
+}
+    
+#drawer.open {
+    transform: translate(0,0)
+}
+    
+/* styling pendukung */
+main {
+    padding: 16px;
+}
+    
+#drawer ul {
+    list-style-type: none;
+    padding: 0 16px;
+}
+    
+#drawer li {
+    padding: 5px 0px;
+}
+    
+#drawer a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+    
+#hamburger {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive Break Points */
+@media screen and (min-width: 600px) {
+    body {
+      display: grid;
+      grid-template-columns: 300px auto;
+    }
+     #drawer {
+      position: relative;
+      transform: translate(0, 0);
+    }
+    
+    #hamburger {
+      display: none;
+    }
+}

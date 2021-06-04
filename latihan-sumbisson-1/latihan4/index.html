@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Focus 1</title>
+</head>
+<body>
+    <!-- Focus tidak berurut karena manipulasi float pada css -->
+    <!-- <div class="container">
+        <div class="row">
+          <button style="float: right;">Leo</button>
+          <button style="float: left">Scorpio</button>
+          <button style="float: left">Unicorn</button>
+        </div>
+        <div class="row">
+          <button style="float: none">Taurus</button>
+          <button style="float: left">Capricon</button>
+          <button style="float: right">Pisces</button>
+        </div>
+    </div> -->
+
+    <!-- Focus berurut karena manipulasi float pada css -->
+    <div class="container">
+        <div class="row">
+          <button tabindex="3" style="float: right;">????️ Leo</button>
+          <button tabindex="1" style="float: left">????️Scorpio</button>
+          <button tabindex="2" style="float: left">????️ Unicorn</button>
+        </div>
+        <div class="row">
+          <button tabindex="5" style="float: none">????️ Taurus</button>
+          <button tabindex="4" style="float: left">????️ Capricon</button>
+          <button tabindex="6" style="float: right">????️ Pisces</button>
+        </div>
+   </div>
+</body>
+</html>

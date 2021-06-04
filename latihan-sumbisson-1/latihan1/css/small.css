@@ -1,0 +1,18 @@
+body {
+    background-color: orange;
+}
+
+/* Menggunakan anotasi media */
+/* minimal layar ukuran sedang */
+@media screen and (min-width: 480px) {
+    h1 {
+      color: blue;
+    }
+}
+    
+/* minimal layar ukuran besar */
+@media screen and (min-width: 768px) {
+    h1 {
+      text-align: center;
+    }
+}

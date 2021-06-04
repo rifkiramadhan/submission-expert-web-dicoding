@@ -1,0 +1,87 @@
+/* 
+ * Responsive Mobile
+ */
+@media only screen and (max-width: 340px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo-resto,
+  .jumbotron__title {
+    font-size: 1.5em;
+  }
+
+  .nav-item a,
+  .jumbotron__subtitle,
+  .button-active {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    text-align: center;
+  }
+
+  .menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu span {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0;
+    height: 175px;
+    flex-wrap: wrap;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-open {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .main-content__title {
+    margin-bottom: 1em;
+  }
+
+  #explore-restaurant,
+  #fav-resto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.545em;
+    grid-row-gap: 1.545em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+  #explore-restaurant,
+  #fav-resto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+}

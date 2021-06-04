@@ -1,0 +1,134 @@
+/*
+ * Main
+ */
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-card-title {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-family: fantasy;
+  text-shadow: 3px 2px 1px var(--font-detail);
+}
+
+.title-container {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 24px;
+  text-shadow: 3px 2px 1px var(--font-detail);
+}
+
+.container {
+  padding: 1em;
+  margin: 2em 10%;
+  flex: 1 0 auto;
+}
+
+#explore-restaurant {
+  display: grid;
+  grid-row-gap: 1.5em;
+  padding-top: 1.5em;
+}
+
+/*
+ * Post Item
+ */
+.post-item {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: .5s;
+  border-radius: 0 15px 0 15px;
+  background-color: var(--card-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-item:hover {
+  box-shadow: 0 6px 10px 0 rgba(5, 0, 0, 0.5);
+  transition: .5s;
+}
+
+.post-item__date {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--drop-shadow);
+  font-weight: 500;
+}
+
+.post-item__date strong {
+  color: var(--card-p-strong);
+}
+
+.post-item__content {
+  padding: 16px;
+}
+
+.post-item__content p .fa-star {
+  color: var(--star-rating);
+}
+
+.post-item__content p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.post-item__thumbnail {
+  max-width: 100%;
+}
+
+.post-item__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: 0.3s opacity;
+  font-family: 'Righteous', cursive;
+}
+
+.post-item__title:hover {
+  opacity: 0.5;
+}
+
+.post-item__title a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.post-item__description {
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.post-item__city {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 16px;
+  background-color: var(--card-title);
+  border-radius: 50px;
+  color: var(--text-color);
+  text-align: center;
+  padding: 5px 10px 5px;
+}
+
+.post-item__button, div.content button:hover {
+  opacity: 0.8;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  text-align: start;
+  -webkit-box-orient: vertical;
+}

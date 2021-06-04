@@ -1,0 +1,13 @@
+/*
+ * footer
+ */
+footer {
+    padding: 1em;
+    width: 100%;
+    background-color: var(--footer);
+}
+  
+footer p {
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 tabindex="0">Personal Blog</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <h2 tabindex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+  <p tabindex="0">Published at <time datetime="2018-07-07">July 7</time> in London's Hyde Park.</p>
+  
+  <img tabindex="0" src="https://picsum.photos/600/300">
+  <p tabindex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus erat auctor fringilla pharetra. In in mauris nec ex lobortis maximus sed ut justo.</p>
+
+  <custom-button tabindex="0">Press Tab to Focus Me!</custom-button>
+  <button tabindex="-1" id="foo">Saya tidak memiliki tab order</button>
+  <button onclick="foo.focus()">Fokuskan ke tombol sebelah</button>
+</body>
+</html>
