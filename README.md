@@ -1,8 +1,8 @@
 # Layout Desktop
-![](screenshot/1.JPG)
+![](Screenshot/1.JPG)
 
 # Layout Mobile
-![](screenshot/2.png)
+![](Screenshot/2.png)
 
 ## Link Hosting 
-[Nearby Resto : ](https://nearby-resto.netlify.app/)
+[Nearby Resto](https://nearby-resto.netlify.app/)
